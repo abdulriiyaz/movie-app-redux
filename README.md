@@ -1,3 +1,7 @@
+# Movie Search App with React and Redux
+
+A movie searching App which retrieves data from the OMDB API and all the states are managed with Redux.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
