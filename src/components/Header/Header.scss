@@ -1,0 +1,48 @@
+@import "../../common/color.scss";
+
+.header {
+    background-color: $secondary-color;
+    height: 72px;
+    padding: 0px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.search-container{
+    width: 100%;
+    padding: 0;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.search:hover{
+    outline: none;
+}
+
+.logo {
+    color: $font-secondary;
+    font-size: 2.5rem;
+    padding: 5px;
+}
+
+.search{
+    color: $font-primary;
+    background-color: $primary-color;
+    width : 100%;
+    list-style: none;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 15px;
+    border-radius: 30px;
+}
+.user-image,
+.user-image img{
+    width: 38px;
+    height: 38px;
+}
+
