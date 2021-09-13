@@ -9,6 +9,17 @@
     }
 }
 
+::-webkit-scrollbar-thumb{
+    border-radius: 2px;
+    background: $font-secondary;
+}
+
+::-webkit-scrollbar-track{
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+
 .movie-container{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
