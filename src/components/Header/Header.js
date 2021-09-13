@@ -2,14 +2,14 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import user from '../../images/user.png'
 import './Header.scss'
-import { GiDiabloSkull } from "react-icons/gi";
+import { RiSkull2Fill } from "react-icons/ri";
 
 const Header = () => {
     return (
       <div className="header">
         <Link to="/">
           <div className="logo">
-            <GiDiabloSkull />
+            <RiSkull2Fill />
           </div>
         </Link>
         <div className="search-container">
