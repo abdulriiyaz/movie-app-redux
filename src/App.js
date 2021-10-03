@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.scss';
 import Header from './components/Header/Header'
@@ -9,13 +9,14 @@ import MovieDetail from './components/MovieDetail/MovieDetail'
 
 
 function App() {
+  
   return (
     <div className="App">
       <Router>
-        <Header />
+        <Header/>
         <div className="container">
         <Switch>
-          <Route path="/" exact component={Home} />
+          <Route path="/" exact><Home/></Route>
           <Route path="/movie/:imdbID" component={MovieDetail} />
           <Route component={PageNotFound} />
         </Switch>
