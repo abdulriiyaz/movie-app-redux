@@ -9,7 +9,7 @@ import { addMovies } from "../../features/movies/movieSlice";
 import { useDispatch } from "react-redux";
 
 const Header = () => {
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState("Harry");
   
   const dispatch = useDispatch();
 
@@ -26,7 +26,7 @@ const Header = () => {
 
     fetchMovies();
   }, [search, dispatch]);
-  console.log(search);
+  // console.log(search);
     
     const handleSearch = (e) => {
       setSearch(e.target.value)
@@ -40,7 +40,7 @@ const Header = () => {
           </div>
         </Link>
         <div className="search-container">
-          <input value={search} className="search" placeholder="Search..." onChange={handleSearch}/>
+          <input className="search" placeholder="Search..." onChange={handleSearch}/>
         </div>
         <div className="user-image">
           <img src={user} alt="user" />
